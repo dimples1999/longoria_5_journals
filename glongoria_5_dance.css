@@ -1,0 +1,60 @@
+\body {
+    background-color:#;
+    margin: 0px;
+    color: 
+}
+
+.container { 
+    background-color:#;
+    height: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+}
+
+header {
+    background-color:#;
+    height: 100px;
+    width: 700px;
+}
+
+h1 { 
+    font-family: technical;
+    font-size: 72px;
+    margin: 0px;
+    text-align: center;
+}
+
+nav {
+    background-color:#;
+    height: 50px;
+    width: 700px;
+}
+
+td {
+   color:#;
+   font-family: technical;
+   font-size: 35px;
+}
+
+table {
+   width: 700px;
+}
+
+a {
+   color:#;
+   text-decoratiom: none;
+}
+
+a:hover {
+    color:#;
+}
+
+.main {
+    background-color:#;
+    float: left;
+    font-family: technical;
+    height: 595px;
+    margin-bottom: 5px;
+    width: 545px;
+}
