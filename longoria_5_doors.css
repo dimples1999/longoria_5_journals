@@ -1,0 +1,171 @@
+h1 {
+    font-family: fantasy;
+    color: crimson;
+}
+
+body {
+    background-color: black;
+}
+
+.Door1 {
+    background-color: aquamarine;
+    height: 200px;
+    width: 200px;
+    transition-duration; 2s;
+}
+
+.container:hover {
+    background-color:
+    transition-duration:
+}
+        
+.colorChange {
+    background-color: orange;
+    height: 50px;
+    width: 50px;
+    transition-duration: 2s;
+}
+
+.rainforrest {
+    background-color: yellowgreen;
+    transition-duration: 2s;
+    height: 
+    width:
+    position:fixed
+    left: 100px;
+}
+
+.colorChange:hover {
+    background-color: mistyrose;
+    transition-duration: 2s;
+}
+
+
+.sizeChange {
+    background-color: orangered;
+    height: 50px;
+    width: 50px;
+    transition-duration: 2s;
+}
+
+.sizeChange:hover {
+    height: 200px;
+    width: 200px;
+    transition-duration: 2s;
+}
+
+.locChange {
+    background-color: blue;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    left: 10px;
+    transition-duration: 2s;
+}
+
+.locChange:hover {
+    left: 200px;
+    transition-duration: 2s;
+}
+
+.opChange {
+    background-color: springgreen;
+    height: 50px;
+    width: 50px;
+    opacity: 100;
+    transition-duration: 2s;
+}
+
+.opChange:hover {
+    opacity: 100;
+    transition-duration: 2s;
+}
+
+.rotateChange {
+    background-color: hotpink;
+    height: 50px;
+    width: 50px;
+    transition-duration: 2s;
+}
+
+.rotateChange:hover {
+    transform: rotate(180deg);
+    transition-duration: 2s;
+}
+
+.view {
+	height: 50px;
+	width: 50px;
+
+	perspective: 160px;
+}
+
+.rotate3DChange {
+	background-color: navy;
+	height: 50px;
+	width: 50px;
+
+	transform: rotateY(0deg);
+	transition-duration: 2s;
+}
+
+.rotate3DChange:hover {
+	transform: rotateY(-360deg);
+	transition-duration: 2s;
+}
+
+.parent {
+	background-color: gainsboro;
+	height: 50px;
+	width: 50px;
+}
+
+.child {
+	background-color: orchid;
+	height: 50px;
+	width: 50px;
+	position: relative;
+	top: 50px;
+	left: 50px;
+	transition-duration: 2s;
+}
+
+.parent:hover > .child {
+	top: 0px;
+	left: 0px;
+	transition-duration: 2s;
+}
+
+.brother {
+	background-color: deeppink;
+	height: 50px;
+	width: 50px;
+}
+
+.sister {
+	background-color: deepskyblue;
+	height: 50px;
+	width: 50px;
+	margin: 0px;
+	transition-duration: 2s;
+}
+
+.brother:hover + .sister {
+	margin-left: 20px;
+	transition-duration: 2s;
+}
+
+.last {
+	background-color: gold;
+	height: 50px;
+	width: 50px;
+}
+
+.last:hover + .first {
+	background-color: darkmagenta;
+	height: 50px;
+	width: 50px;
+	transition-duration: 2s;
+} 
+
+

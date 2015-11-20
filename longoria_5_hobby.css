@@ -1,11 +1,11 @@
 body {
-    background-color:#270239;
+    background-color:#FAF0EE;
     margin: 0px;
-    color:#000000 
+    color: #000000
 }
 
 .container { 
-    background-color:#9800ED;
+    background-color:#FFE35C;
     height: 850px;
     margin-left: auto;
     margin-right: auto;
@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    background-color:#FDFBFF;
+    background-color:#FF2300;
     height: 100px;
     width: 700px;
 }
@@ -26,13 +26,13 @@ h1 {
 }
 
 nav {
-    background-color:#5D2878;
+    background-color:#8A57D1;
     height: 50px;
     width: 700px;
 }
 
 td {
-   color:#6D069E;
+   color:#000000;
    font-family: technical;
    font-size: 35px;
 }
@@ -42,16 +42,16 @@ table {
 }
 
 a {
-   color:#3C3C3D;
+   color:#E7539B;
    text-decoratiom: none;
 }
 
 a:hover {
-    color:#390660;
+    color:#FF872E;
 }
 
 .main {
-    background-color:#020103;
+    background-color:#4DAEC9;
     float: left;
     font-family: technical;
     height: 595px;

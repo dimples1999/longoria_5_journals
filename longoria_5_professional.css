@@ -1,11 +1,11 @@
 body {
-    background-color:#270239;
+    background-color:#;
     margin: 0px;
-    color:#000000 
+    color:#000000;
 }
 
 .container { 
-    background-color:#9800ED;
+    background-color:#;
     height: 850px;
     margin-left: auto;
     margin-right: auto;
@@ -13,28 +13,28 @@ body {
 }
 
 header {
-    background-color:#FDFBFF;
-    height: 100px;
+    background-color:#FFB000;
+    height: 40px;
     width: 700px;
 }
 
 h1 { 
-    font-family: technical;
+    font-family: "Open Sans Light";
     font-size: 72px;
     margin: 0px;
     text-align: center;
 }
 
 nav {
-    background-color:#5D2878;
+    background-color:#;
     height: 50px;
     width: 700px;
 }
 
 td {
-   color:#6D069E;
-   font-family: technical;
-   font-size: 35px;
+   color:#;
+   font-family: "Open Sans Semibold";
+   font-weight: 600;
 }
 
 table {
@@ -42,18 +42,18 @@ table {
 }
 
 a {
-   color:#3C3C3D;
-   text-decoratiom: none;
+   color:#;
+   text-decoration: none;
 }
 
 a:hover {
-    color:#390660;
+    color:#;
 }
 
 .main {
-    background-color:#020103;
-    float: left;
-    font-family: technical;
+    background-color:#8F8F8F;
+    float: center;
+    font-family: sans-serif;
     height: 595px;
     margin-bottom: 5px;
     width: 545px;
