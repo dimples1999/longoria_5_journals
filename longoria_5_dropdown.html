@@ -1,0 +1,114 @@
+<! doctype html>
+<html>
+<head>
+<title>Michael Jackson Albums</title>
+	<meta name="keywords" content="d22 is awesome; ninja">
+	<meta name="description" content="">
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+
+<!-- dd menu -->
+<script type="text/javascript">
+<!--
+var timeout	= 500;
+var closetimer	= 0;
+var ddmenuitem  = 0;
+
+// open hidden layer
+function mopen(id)
+{
+	// cancel close timer
+	mcancelclosetime();
+
+	// close old layer
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+	// get new layer and show it
+	ddmenuitem = document.getElementById(id);
+	ddmenuitem.style.visibility = 'visible';
+
+}
+// close showed layer
+function mclose()
+{
+    if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+}
+
+// go close timer
+function mclosetime()
+{
+    closetimer = window.setTimeout(mclose, timeout);
+}
+
+// cancel close timer
+function mcancelclosetime()
+{
+    if(closetimer)	 
+    {
+        window.clearTimeout(closetimer);
+	closetimer = null;
+    }
+}
+
+//close layer when clisk-out
+document.onclick = mclose;
+// -->
+</script>
+
+</head>
+<body>
+
+<h1>Michael Jackson Albums</h1>
+
+<p>This is where you can check out and purchase Michael's best known albums and posters.</p>
+
+<ul id="sddm">
+    <li><a href="#" onmouseover="mopen('m1')" onmouseout="mclosetime()">Michael Jackson CDs</a>
+	<div id="m1" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+	<a href="#">Off The Wall (Anniversary or Original)</a>
+	<a href="#">Thriller (Anniversary or Original)</a>
+	<a href="#">BAD (Anniversary or Original)</a>
+	<a href="#">Dangerous (Anniversary or Original)</a>
+	<a href="#">HIStory (Anniversary or Original)</a>
+	</div>
+    </li>
+    <li><a href="#" onmouseover="mopen('m2')" onmouseout="mclosetime()">Michael Jackson Posters</a>
+	<div id="m2" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+	<a href="#">Off The Wall (Landscape, Portrait, or Signed)</a>
+	<a href="#">Thriller (Landscape, Portrait, or Signed)</a>
+	<a href="#">BAD (Landscape, Portrait, or Signed)</a>
+	<a href="#">Dangerous (Landscape, Portrait, or Signed)</a>
+    <a href="#">HIStory (Landscape, Portrait, or Signed)</a>
+	</div>
+    </li>
+    <li><a href="#" onmouseover="mopen('m3')" onmouseout="mclosetime()">Order</a>
+	<div id="m3" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+	<a href="#">Visa Credit Card</a>
+	<a href="#">Paypal</a>
+	<a href="#">Bitcoin</a>
+	<a href="#">Dogecoin</a>
+	</div>
+    </li>
+    <li><a href="#" onmouseover="mopen('m4')" onmouseout="mclosetime()">Help</a>
+	<div id="m4" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+	<a href="#">Download Help File</a>
+	<a href="#">Read Online</a>
+    <a href="#">Help Center</a>
+	</div>
+    </li>
+    <li><a href="#" onmouseover="mopen('m5')" onmouseout="mclosetime()">
+	<div id="m5" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+	<a href="#">E-mail</a>
+	<a href="#">Submit Request Form</a>
+	<a href="#">Contacts</a>
+    <a href="#">Policy</a>
+	</div>
+    </li>
+</ul>
+<div style="clear:both"></div>
+
+<div style="clear:both"></div>
+
+</body>
+</html>
+
+	
