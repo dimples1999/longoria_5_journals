@@ -7,54 +7,45 @@ body {
     background-color: black;
 }
 
-.door1 {
+.Door 1 {
     background-color: aquamarine;
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
     transition-duration; 2s;
 }
 
-.container:hover {
+.Door 1:hover {
     background-color: orange;
     transition-duration: 2s;
 }
         
-.colorChange {
+.Door 2 {
     background-color: cyan;
     height: 50px;
     width: 50px;
     transition-duration: 2s;
 }
 
-.rainforrest {
-    background-color: yellowgreen;
-    transition-duration: 2s;
-    height: 100px;
-    width: 100px;
-    position: fixed;
-    left: 100px;
-}
-
-.colorChange:hover {
+.Door 2:hover {
     background-color: mistyrose;
     transition-duration: 2s;
 }
 
 
-.sizeChange {
+.Door 3 {
     background-color: orangered;
     height: 50px;
     width: 50px;
     transition-duration: 2s;
 }
 
-.sizeChange:hover {
+.Door 3:hover {
     height: 200px;
     width: 200px;
     transition-duration: 2s;
 }
 
-.locChange {
+.Door 4 {
     background-color: blue;
     height: 50px;
     width: 50px;
@@ -63,12 +54,12 @@ body {
     transition-duration: 2s;
 }
 
-.locChange:hover {
+.Door 4:hover {
     left: 200px;
     transition-duration: 2s;
 }
 
-.opChange {
+Door 5 {
     background-color: springgreen;
     height: 50px;
     width: 50px;
@@ -76,31 +67,31 @@ body {
     transition-duration: 2s;
 }
 
-.opChange:hover {
+.Door 5:hover {
     opacity: 100;
     transition-duration: 2s;
 }
 
-.rotateChange {
+.Door 6 {
     background-color: hotpink;
     height: 50px;
     width: 50px;
     transition-duration: 2s;
 }
 
-.rotateChange:hover {
+.Door 6:hover {
     transform: rotate(180deg);
     transition-duration: 2s;
 }
 
-.view {
+.Door 7 {
 	height: 50px;
 	width: 50px;
 
 	perspective: 160px;
 }
 
-.rotate3DChange {
+.Door 8 {
 	background-color: navy;
 	height: 50px;
 	width: 50px;
@@ -109,63 +100,21 @@ body {
 	transition-duration: 2s;
 }
 
-.rotate3DChange:hover {
+.Door 8:hover {
 	transform: rotateY(-360deg);
 	transition-duration: 2s;
 }
 
-.parent {
+.Door 9 {
 	background-color: gainsboro;
 	height: 50px;
 	width: 50px;
 }
 
-.child {
-	background-color: orchid;
-	height: 50px;
-	width: 50px;
-	position: relative;
-	top: 50px;
-	left: 50px;
-	transition-duration: 2s;
-}
-
-.parent:hover > .child {
+.Door 9:hover {
 	top: 0px;
 	left: 0px;
 	transition-duration: 2s;
 }
-
-.brother {
-	background-color: deeppink;
-	height: 50px;
-	width: 50px;
-}
-
-.sister {
-	background-color: deepskyblue;
-	height: 50px;
-	width: 50px;
-	margin: 0px;
-	transition-duration: 2s;
-}
-
-.brother:hover + .sister {
-	margin-left: 20px;
-	transition-duration: 2s;
-}
-
-.last {
-	background-color: gold;
-	height: 50px;
-	width: 50px;
-}
-
-.last:hover + .first {
-	background-color: darkmagenta;
-	height: 50px;
-	width: 50px;
-	transition-duration: 2s;
-} 
 
 
