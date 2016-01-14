@@ -1,0 +1,30 @@
+#blue {
+    height: 100px;
+    font-family: sans-serif;
+    font-size: 75px;
+    background-color: blue;
+    width: auto;
+    color: white;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+#yellow {
+    height: 210px;
+    width: auto;
+    background-color: yellow;
+    margin-top: 0px;
+    padding: none;
+}
+
+#red {
+    height: 325px;
+    width: auto;
+    background-color: red;
+}
+
+#black {
+    height: 150px;
+    width: auto;
+    background-color: black;
+}
