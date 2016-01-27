@@ -1,0 +1,81 @@
+header {
+    background-color: black;
+    text-align: left;
+    position: relative;
+    height: 60px;
+    width: 900px;
+    margin-bottom: -20px;
+    font-size: 25px;
+    margin-left: 375px;
+    text-align: center;
+    color: 4B2583;
+}
+
+body {
+    background-color: black;
+}
+
+.what {
+    background-color: black;
+    height: 100px;
+    width: 900px;
+    margin-bottom: -12px;
+    margin-left: 375px;
+    text-align: center;
+    color: 4B2583;
+}
+
+.when {
+    height: 250px;
+    width: 225px;
+    margin-left: 375px;
+    margin-bottom: 25px;
+    background-color: black;
+    position: relative;
+    margin-top: -22px; 
+    text-align: center;
+    color: 4B2583;
+}
+
+.elementary {
+    height: 250px;
+    width: 225px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    background-color: black;
+    position: relative;
+    margin-left: 600px;
+    margin-top: -275px;
+    text-align: center;
+    color: 4B2583;
+}
+
+.middle {
+    height: 250px;
+    width: 250px;
+    margin-left: 800px;
+    margin-bottom: 0px;
+    background-color: black;
+    position: relative;
+    margin-top: -275px;
+    text-align: center;
+    color: 4B2583;
+}
+
+.high {
+    height: 250px;
+    width: 225px;
+    margin-left: 1050px;
+    margin-bottom: 5px;
+    background-color: black;
+    position: relative;
+    margin-top: -270px;
+    text-align: center;
+    color: 4B2583;
+}
+
+.cheese {
+    position: absolute;
+    right: 30%;
+    margin-top: -150px;
+}
