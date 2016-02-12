@@ -1,0 +1,60 @@
+body {
+    background-color:#793100;
+    margin: 0px;
+    color:#000000; 
+}
+
+.container { 
+    background-color:#BB4C00;
+    height: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+}
+
+header {
+    background-color:#FF6700;
+    height: 100px;
+    width: 700px;
+}
+
+h1 { 
+    font-family: technical;
+    font-size: 72px;
+    margin: 0px;
+    text-align: center;
+}
+
+nav {
+    background-color:#FF7213;
+    height: 50px;
+    width: 700px;
+}
+
+td {
+   color:#FF8B3D;
+   font-family: technical;
+   font-size: 35px;
+}
+
+table {
+   width: 700px;
+}
+
+a {
+   color:#FF8700;
+   text-decoratiom: none;
+}
+
+a:hover {
+    color:#FF951F;
+}
+
+.main {
+    background-color:#C8FAFF;
+    float: left;
+    font-family: technical;
+    height: 595px;
+    margin-bottom: 5px;
+    width: 545px;
+}

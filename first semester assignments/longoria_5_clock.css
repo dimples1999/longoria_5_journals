@@ -1,0 +1,93 @@
+.container {
+    height: 125px;
+    width: 150px;
+    border-radius: 170px;
+    position: relative;
+    background-color: floralwhite;
+}
+#one {
+    height: 75px;
+    width: 75px;
+    border-radius: 50px;
+    position: relative;
+    background-color: #AA25FF;
+}
+#two {
+    height: 75px;
+    width: 75px;
+    border-radius: 50px;
+    position: relative;
+    background-color: aqua;
+}
+#three {
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+    position: relative;
+    background-color: coral;
+    margin-left: 120px;
+}
+#four {
+    height: 100px;
+    width: 100px;
+    border-radius:  50px;
+    position: relative;
+    background-color: #FF1723;
+    margin-left: 30px;
+}
+#five {
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+    position: relative;
+    background-color: chartreuse;
+}
+#six{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    position: relative;
+    background-color: fuchsia;
+}
+#seven{
+    height: 75px;
+    width: 75px;
+    border-radius: 50px;
+    position: relative;
+    background-color: #FFF907;
+}
+#eight{
+    height: 75px;
+    width: 75px;
+    border-radius: 50px;
+    position: relative;
+    background-color: #FFB766;
+}
+#nine{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    position: relative;
+    background-color: #2D61EF;
+}
+#ten{
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+    position: relative;
+    background-color: #EF15E5;
+}
+#eleven{
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+    position: relative;
+    background-color: #15EFAD;
+}
+#twelve{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    position: relative;
+    background-color: palegreen;
+}

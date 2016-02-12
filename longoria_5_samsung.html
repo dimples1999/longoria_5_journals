@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Samsung Menu</title>
+        <meta name="keywords" content="D22 is awesome; ninja">
+        <meta name="description" content="">
+        <link rel="stylesheet" type="text/css" href="longoria_5_samsung.css">
+       
+        <!-- dd menu -->
+        <script type="text/javascript">
+            <!--
+                var timeout = 500;
+            var closetimer = 0;
+            var ddmenuitem = 0;
+           
+            // open hidden layer
+            function mopen(id)
+            {
+                // cancel closetimer
+                mcancelclosetime();
+               
+                // close old layer
+                if(ddmenuitem) ddmenuitem.style.visibility = 'hidden' ;
+               
+                // get new layer and show it
+                ddmenuitem = document.getElementById(id);
+                ddmenuitem.style.visibility = 'visible' ;
+               
+            }
+            // close showed layer
+            function mclose()
+            {
+                if(ddmenuitem) ddmenuitem.style.visibility = 'hidden' ;
+            }
+           
+            // go close timer
+            function mclosetime()
+            {
+                closetimer = window.setTimeout(mclose, timeout);
+            }
+           
+            // cancel close timer
+            function mcancelclosetime()
+            {
+                if(closetimer)
+                {
+                    window.clearTimeout(closetimer);
+                    closetimer = null;
+                }
+            }
+           
+            // close layer when click-out
+            document.onclick = mclose;
+            // -->
+        </script>
+       
+    </head>
+    <body>
+       
+        <h1>Samsung Products</h1>
+       
+        <p>This is where you can check out our newest Samsung phones (galaxy), laptops, and TV's. Reviews on our items are also listed.</p>
+       
+        <ul id="sddm">
+            <li><a href="longoria_5_samsungphones.html" onmouseover="mopen('m1')" onmouseout="mclosetime()">Samsung Phones</a>
+                <div id="m1" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+                <a href="./longoria_5_phones/longoria_5_galaxys.html">Galaxy S</a>
+                <a href="./longoria_5_phones/longoria_5_note.html">Galaxy Note</a>
+                <a href="./longoria_5_phones/longoria_5_edge.html">Galaxy S6 edge 128GB (Black or White)</a>
+                <a href="./longoria_5_phones/longoria_5_s6.html">Galaxy S6 64GB (Gold, Black or White)</a>
+                <a href="./longoria_5_phones/longoria_5_32gb.html">Galaxy S6 edge 32GB (Gold, Black or White)</a>
+            </div>
+            </li>
+            <li><a href="./laptops/longoria_5_computers.html" onmouseover="mopen('m2')" onmouseout="mclosetime()">Samsung Laptops</a>
+                <div id="m2" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+                    <a href="./longoria_5_laptops/longoria_5_ativ.html">ATIV Book 9 Spin (13.3" LED QHD)</a>
+                    <a href="./longoria_5_laptops/longoria_5_book9.html">ATIV Book 9 Pro (15.6" LED UHD)</a>
+                    <a href="./longoria_5_laptops/longoria_5_ativled.html">ATIV Book 9 (12.2" LED WQXGA)</a>
+                    <a href="./longoria_5_laptops/longoria_5_qhdtouch.html">ATIV Book 9 Plus (13.3" QHD + Touch)</a>
+                    <a href="./longoria_5_laptops/longoria_5_book9plus.html">ATIV Book 9 Plus 13.3"</a>
+                </div>
+            </li>
+            <li><a href="./TV/longoria_5_television.html" onmouseover="mopen('m3')" onmouseout="mclosetime()">Samsung TVs</a>
+                <div id="m3" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+                    <a href="./longoria_5_TV/longoria_5_suhd.html">4K SUHD Curved Smart TV - 78"</a>
+                    <a href="./longoria_5_TV/longoria_5_4k.html">4K SUHD Curved Smart TV - 65"</a>
+                    <a href="./longoria_5_TV/longoria_5_smarttv.html">4K SUHD Smart TV - 78"</a>
+                    <a href="./longoria_5_TV/longoria_5_suhdtv.html">4K SUHD Smart TV - 55"</a>
+                    <a href="./longoria_5_TV/longoria_5_suhdsmart.html">4K SUHD Smart TV - 60"</a>
+                </div>
+            </li>
+             <li><a href="./support/longoria_5_help.html" onmouseover="mopen('m4')" onmouseout="mclosetime()">Support</a>
+                <div id="m4" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+                    <a href="./longoria_5_support/longoria_5_account.html">Accounts and Payment</a>
+                    <a href="./longoria_5_support/longoria_5_contact.html">Contact Us</a>
+                    <a href="./longoria_5_support/longoria_5_privacy.html">Privacy</a>
+                    <a href="./longoria_5_support/longoria_5_tracking.html">Track Order</a>
+                    <a href="./longoria_5_support/longoria_5_repairs.html">Repair</a>
+                </div>
+            </li>
+             <li><a href="./about/longoria_5_about.html" onmouseover="mopen('m5')" onmouseout="mclosetime()">About</a>
+                <div id="m5" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+                    <a href="./longoria_5_about/longoria_5_terms.html">Terms and Conditions</a>
+                    <a href="./longoria_5_about/longoria_5_aboutus.html">About Us</a>
+                    <a href="./longoria_5_about/longoria_5_team.html">The Samsung Team</a>
+                    <a href="./longoria_5_about/longoria_5_settingaccounts.html">Setting Up Accounts</a>
+                    <a href="./longoria_5_about/longoria_5_plans.html">Payment Plans</a>
+               </div>
+            </li>
+        </ul>
+        <div style="clear:both"></div>
+       
+        <div style="clear:both"></div>
+    </body>
+</html>

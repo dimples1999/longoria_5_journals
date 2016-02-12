@@ -1,0 +1,60 @@
+body {
+    background-color:#FAF0EE;
+    margin: 0px;
+    color: #000000
+}
+
+.container { 
+    background-color:#FFE35C;
+    height: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+}
+
+header {
+    background-color:#FF2300;
+    height: 100px;
+    width: 700px;
+}
+
+h1 { 
+    font-family: technical;
+    font-size: 72px;
+    margin: 0px;
+    text-align: center;
+}
+
+nav {
+    background-color:#8A57D1;
+    height: 50px;
+    width: 700px;
+}
+
+td {
+   color:#000000;
+   font-family: technical;
+   font-size: 35px;
+}
+
+table {
+   width: 700px;
+}
+
+a {
+   color:#E7539B;
+   text-decoratiom: none;
+}
+
+a:hover {
+    color:#FF872E;
+}
+
+.main {
+    background-color:#4DAEC9;
+    float: left;
+    font-family: technical;
+    height: 595px;
+    margin-bottom: 5px;
+    width: 545px;
+}

@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<metacharset"utf-8">
+		<link href="longoria_5_professional.html" rel="stylesheet" type="text/css">
+		<title>Gabriela's Professional Website</title>
+	</head>
+	<body>
+		<header>
+			<img src:"src.jpng" float: right; height: 35px; width: 35px;>
+			<h1>Comics</h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="longoria_5_professional.html">Home</a></li>
+				<li><a href="longoria_5_professional.html">Games</a></li>
+				<li><a href="longoria_5_professional.html">Comics</a></li>
+				<li><a href="longoria_5_professional.html">Movies</a></li>
+				<li><a href="longoria_5_professional.html">TV</a></li>
+				<li><a href="longoria_5_professional.html">Characters</a></li>
+			</ul>
+		</nav>
+        <footer>
+            <div id="social-sidebar">
+            <div class="custom-social-widgets">
+                <div class="social-section twitter-section">
+                    <div class="section-timer> 
+                        < 

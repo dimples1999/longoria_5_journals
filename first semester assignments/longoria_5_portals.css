@@ -1,0 +1,120 @@
+h1 {
+    font-family: inherit;
+    color: crimson;
+}
+
+body {
+    background-color: black;
+}
+
+.Door 1 {
+    background-color: aquamarine;
+    height: 100px;
+    width: 100px;
+    transition-duration; 2s;
+}
+
+.Door 1:hover {
+    background-color: orange;
+    transition-duration: 2s;
+}
+        
+.Door 2 {
+    background-color: cyan;
+    height: 50px;
+    width: 50px;
+    transition-duration: 2s;
+}
+
+.Door 2:hover {
+    background-color: mistyrose;
+    transition-duration: 2s;
+}
+
+
+.Door 3 {
+    background-color: orangered;
+    height: 50px;
+    width: 50px;
+    transition-duration: 2s;
+}
+
+.Door 3:hover {
+    height: 200px;
+    width: 200px;
+    transition-duration: 2s;
+}
+
+.Door 4 {
+    background-color: blue;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    left: 10px;
+    transition-duration: 2s;
+}
+
+.Door 4:hover {
+    left: 200px;
+    transition-duration: 2s;
+}
+
+Door 5 {
+    background-color: springgreen;
+    height: 50px;
+    width: 50px;
+    opacity: 100;
+    transition-duration: 2s;
+}
+
+.Door 5:hover {
+    opacity: 100;
+    transition-duration: 2s;
+}
+
+.Door 6 {
+    background-color: hotpink;
+    height: 50px;
+    width: 50px;
+    transition-duration: 2s;
+}
+
+.Door 6:hover {
+    transform: rotate(180deg);
+    transition-duration: 2s;
+}
+
+.Door 7 {
+	height: 50px;
+	width: 50px;
+
+	perspective: 160px;
+}
+
+.Door 8 {
+	background-color: navy;
+	height: 50px;
+	width: 50px;
+
+	transform: rotateY(0deg);
+	transition-duration: 2s;
+}
+
+.Door 8:hover {
+	transform: rotateY(-360deg);
+	transition-duration: 2s;
+}
+
+.Door 9 {
+	background-color: gainsboro;
+	height: 50px;
+	width: 50px;
+}
+
+.Door 9:hover {
+	top: 0px;
+	left: 0px;
+	transition-duration: 2s;
+}
+
+

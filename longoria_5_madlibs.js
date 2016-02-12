@@ -1,28 +1,28 @@
-var name = "Melodie";
+var name = prompt("Pick a name");
 
-var name2 = "Delilah";
+var name2 = prompt("Pick another name");
 
-var hours= "7";
+var hours = prompt("Pick a number");
 
-var vehicle= "limo";
+var vehicle = prompt("Pick a car");
 
-var place= "Magic Mountain";
+var place = prompt("Pick a place");
 
-var noun1="street";
+var noun1 = prompt( "Pick a noun" );
 
-var verb1="dancing";
+var verb1 = prompt(" pick a verb");
 
-var verb2="fascinated";
+var verb2 = prompt("Pick another verb");
 
-var verb3="rescued";
+var verb3 = prompt("Pick anoher verb");
 
-var adj1="beautiful";
+var adj1 = prompt("Pick an adjective");
 
-var adj2="funny";
+var adj2 = prompt("Pick another adjective");
 
-var adj3="inexpensive";
+var adj3 = prompt("Pick another adjective");
 
-var prep1=" around";
+var prep1 = prompt(" Pick a preposition");
 
 
 document.write("Last month, " +name +" went to Disney " + "World with " +name2 +".");

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Drop Down Menu</title>
+        <meta name="keywords" content="D22 is awesome; ninja">
+        <meta name="description" content="">
+        <link rel="stylesheet" type="text/css" href="longoria_5_dropdown.css">
+        
+        <!-- dd menu -->
+        <script type="text/javascript">
+            <!--
+                var timeout = 500;
+            var closetimer = 0;
+            var ddmenuitem = 0;
+            
+            // open hidden layer
+            function mopen(id)
+            {
+                // cancel closetimer
+                mcancelclosetime();
+                
+                // close old layer
+                if(ddmenuitem) ddmenuitem.style.visibility = 'hidden' ;
+                
+                // get new layer and show it
+                ddmenuitem = document.getElementById(id);
+                ddmenuitem.style.visibility = 'visible' ;
+                
+            }
+            // close showed layer 
+            function mclose()
+            {
+                if(ddmenuitem) ddmenuitem.style.visibility = 'hidden' ;
+            }
+            
+            // go close timer
+            function mclosetime()
+            {
+                closetimer = window.setTimeout(mclose, timeout);
+            }
+            
+            // cancel close timer
+            function mcancelclosetime()
+            {
+                if(closetimer)
+                {
+                    window.clearTimeout(closetimer);
+                    closetimer = null;
+                }
+            }
+            
+            // close layer when click-out
+            document.onclick = mclose;
+            // -->
+        </script>
+        
+    </head>
+    <body>
+        
+        <h1>Michael Jackson</h1>
+        
+        <p>This is where you can check out his albums, posters, tshirts, and tours.</p>
+        
+        <ul id="sddm">
+            <li><a href="longoria_5_dropdowns.html" onmouseover="mopen('m1')" onmouseout="mclosetime()">Home</a>
+                <div id="m1" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+                <a href="./home/longoria_5_signup.html">Sign Up</a>
+		        <a href="./home/longoria_5_aboutus.html">About Us</a>
+                <a href="./home/longoria_5_contactus.html">Contact Us</a>
+                <a href="./home/longoria_5_FAQ.html">FAQ</a>
+            </div>
+            </li>
+            <li><a href="./albums/longoria_5_listening.html" onmouseover="mopen('m2')" onmouseout="mclosetime()">Albums</a>
+                <div id="m2" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+                    <a href="./albums/longoria_5_offthewall.html">Off The Wall</a>
+                    <a href="./albums/longoria_5_thriller.html">Thriller</a>
+                    <a href="./albums/longoria_5_bad.html">Bad</a>
+                    <a href="./albums/longoria_5_dangerous.html">Dangerous</a>
+                </div>
+            </li>
+            <li><a href="./posters/longoria_5_looking.html" onmouseover="mopen('m3')" onmouseout="mclosetime()">Posters</a>
+                <div id="m3" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+                    <a href="./posters/longoria_5_jackson5poster.html">Jackson 5 Poster</a>
+                    <a href="./posters/longoria_5_thrillerposter.html">Thriller Poster</a>
+                    <a href="./posters/longoria_5_badposter.html">Bad Poster</a>
+                    <a href="./posters/longoria_5_dangerousposter.html">Dangerous Poster</a>
+                </div>
+            </li>
+             <li><a href="./tshirts/longoria_5_wearing.html" onmouseover="mopen('m4')" onmouseout="mclosetime()">Tshirts</a>
+                <div id="m4" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+                    <a href="./tshirts/longoria_5_offthewalltshirt.html">Off The Wall tshirt</a>
+                    <a href="./tshirts/longoria_5_thrillertshirt.html">Thriller tshirt</a>
+		            <a href="./tshirts/longoria_5_badtshirt.html">Bad tshirt</a>
+		            <a href="./tshirts/longoria_5_dangeroustshirt.html">Dangerous tshirt</a>
+                </div>
+            </li>
+             <li><a href="./tours/longoria_5_watching.html" onmouseover="mopen('m5')" onmouseout="mclosetime()">Tours</a>
+                <div id="m5" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+                    <a href="./tours/longoria_5_victorytour.html">Victory Tour</a>
+                    <a href="./tours/longoria_5_badtour.html">Bad Tour</a>
+                    <a href="./tours/longoria_5_dangeroustour.html">Dangerous Tour</a>
+		            <a href="./tours/longoria_5_historytour.html">History Tour</a>
+               </div>
+            </li>
+        </ul>
+        <div style="clear:both"></div>
+        
+        <div style="clear:both"></div>
+    </body>
+</html>
+
+
+	
