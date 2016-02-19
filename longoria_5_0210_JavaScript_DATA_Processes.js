@@ -41,6 +41,11 @@ document.write(num1 + "<br>");
 
 if ( k == r) {
     document.write("k and r are the same");
-} else {
-    document.write("<br>k and r are NOT the same");
+} else if (k < r){
+    document.write("<br> k is less than r");
+}   else if (k > r){
+    document.write("<br>k is larger r");
+} 
+    else {
+        document.write("This should never happen unless you're awesome like Wes")
 }
