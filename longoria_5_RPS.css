@@ -9,7 +9,7 @@
     width: 500px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #6d8c8e;
+    background-color: #6CF;
 }
 
 #Title {
@@ -23,7 +23,7 @@
 #Menu {
     height: 75px;
     width: 550px;
-    background-color: #f5f;
+    background-color: #AB00A4;
 }
 #switch {
     color: #000;
@@ -37,7 +37,7 @@
 
 #switch2 {
     color: #000;
-    background-color: #6CF;
+    background-color: #6d8c8e;
     height: 50px;
     width: 100px;
     font-size: 36px;
