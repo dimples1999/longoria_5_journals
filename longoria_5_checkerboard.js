@@ -1,25 +1,25 @@
-#chessboard, .black_square, .white_square {
-	display:block;
-	padding:0px;
-	margin:0px;
+var c = document.getElementById("canvas");
+var ctx = c.getContext("2d");
+var rectWidth = 150;
+var rectHeight = 700;
+ctx.fillStyle = "#000000";
+ctx.fillRect(0, 0, c.width, c.height);
+for (var i = 0; i< 50; i++) {
+    for (var j = 0; j <= 50; j++) {
+        ctx.fillStyle = "#B9FFF3";
+        if((i + j ) % 2 === 0) {
+            ctx.fillRect((100 * i), (50 * j), 30, 30);
+        }
+    }
 }
-
-#chessboard {
-	width:1000px;
-	height:1000px;
+    
+ctx.rotate(Math.PI / 190);
+for (var i = 0; i < 50; i++) {
+    for (var j = 0; j <= 50; j++) {
+        ctx.fillStyle = "#F5BBFF";
+        if((i + j) % 3 === 0) {
+             //ctx.fillRect((100 * i), (60 * j), 30, 30);
+                    ctx.fillRect((-445 + (53 * i)), (-600 + (47 * j)), 30, 30);
+        }
+    }
 }
-
-.black_square, .white_square {
-	width:120px;
-	height:120px;
-	float:left;
-}
-
-.black_square {
-	background-color:#6FCDAC;
-}
-
-.white_square {
-	background-color:#B173CC;
-}
-
