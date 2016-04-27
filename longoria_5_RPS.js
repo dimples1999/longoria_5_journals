@@ -2,16 +2,27 @@ function myFunction() {
     document.getElementById("sample").innerHTML = "Choose your fate wisely...";
 }
 
-
-
 function maChoice(a) {
     if (a == 0) {
-    document.getElementById("player").innerHTML = "You chose almighty rock!";
+    document.getElementById("player").innerHTML = "You chose righteous rock!";
     } else if (a == 1) {
         document.getElementById("player").innerHTML = "You chose precious paper!";
     } else if (a == 2) {
         document.getElementById("player").innerHTML = "You chose supererior scissors!";
     }
+}
+
+function enemy(){
+ var cpu = Math.floor(Math.random()*3);
+
+ if (cpu == 0) {
+  document.getElementById("q").innerHTML = "rock";
+ } else if (cpu == 1) {
+  document.getElementById("q").innerHTML = "paper";
+ } else if (cpu == 2) {
+  document.getElementById("q").innerHTML = "scissor";
+ }
+
 }
 
 

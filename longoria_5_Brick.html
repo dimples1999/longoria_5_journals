@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <script src="longoria_5_Brick.js">
+        </script>
+        <script>
+            window.onload = function(){
+                var anim = new Animation("myCanvas");
+                var canvas = anim.getCanvas();
+                var context = anim.getContext();
+        
+                var gravity = 2; // pixels / second^2
+                var box = {
+                    x: canvas.width / 2 = 50,
+                    y: 0,
+                    vx: 0,
+                    vy: 0,
+                    width: 100,
+                    height: 50
+                };
+        
+                anim.setDragImage(function(){
+                    // update
+        if (this.getTime() > 1000) {
+                    var speedIncrementEachFrame = gravity *
+                    anim.getTimeInterval() / 1000; // pixels / second
+                    boy.vy += speedIncrementEachFrame;
+                    boy.y += box.vy * this.getTimeInterval();
+        
+                    if (box.y > canvas.height - box.height) {
+                        box.y = canvas.height - box.height;
+                        this.stop();
+                    }
+        }
+                
+                    // clear
+                    this.clear();
+        
+                    // draw
+                    context.beginPath();
+                    context.fillStyle = "blue";
+                    context.fillRect(box.x, box.y, box.width, box.height);
+                });
+                
+                anim.start();
+            };
+        </script>
+    </head>
+    <body>
+        <canvas id="myCanvas" width="600" height="250" style="border:1px solid black;">
+        </canvas>
+    </body>
+</html>

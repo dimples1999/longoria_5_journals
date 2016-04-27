@@ -29,7 +29,7 @@ if (three == "red" ) {
 if (four == "drama" ) {
     alert("nailed it my dude!");
 } else { 
-    alert("ummm.. nope")
+    alert("You got it right! Sike!!!")
 }
 
   var five = prompt("what month was she born?");
@@ -53,7 +53,7 @@ if (six == "pizza"  ) {
 if (seven == "selena quintanilla"  ) {
     alert("Yaaasss!! ");
 } else { 
-    alert("That's just sad.. try again!")
+    alert("That's just sad..")
 }
 
   var eight = prompt("who is her best friend?");
