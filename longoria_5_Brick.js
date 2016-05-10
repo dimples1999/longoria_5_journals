@@ -1,4 +1,4 @@
-var animation = function(canvasId){
+var Animation = function(canvasId){
     this.canvas = document.getElementById(canvasId);
     this.context = this.canvas.getContext("2d");
     this.t = 0;
@@ -62,14 +62,14 @@ Animation.prototype.stop = function(){
     this.animating = false;
 };
 Animation.prototype.getTimeInterval = function(){
-    return this.timeinterval;
+    return this.timeInterval;
 };
 
 Animation.prototype.getTime = function(){
     return this.t;
 };
-    
-Animation.prototype.getFps = function(){
+
+Animation.prototype.Fps = function(){
     return this.timeInterval > 0 ? 1000 / this.timeInterval : 0;
 };
 
@@ -88,7 +88,7 @@ Animation.prototype.animationLoop = function(){
     }
     
     if (this.animating) {
-        requestAnimFrame(function(){
+        requestAnimFrame(funtion(){
             that.animationLoop();
         });
     }
