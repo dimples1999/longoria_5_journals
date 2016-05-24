@@ -1,13 +1,13 @@
-function getRandColor(){
-    var colors = ["red", "orange", "yellow", "green", "blue", "violet"];
+function getRandColor() {
+    var colors = ["#14CC7C", "#3D9971", "#01FF00", "#FF40FF", "#9A14CC", "#00FF1A"];
     return colors[Math.floor(Math.random() * colors.length)];
 }
 
-function getRandTheta(){
-    return Math.random() * 2 * Math.PI;
+function getRandThate() {
+    return Math.random() * 10 * Math.PI;
 }
 
-function updateMicrobes(anim, microbes){
+function updateMicrobes(anim, microbes) {
     var canvas = anim.getCanvas();
     var angleVariance = 0.2;
     
@@ -15,50 +15,34 @@ function updateMicrobes(anim, microbes){
         var microbe = microbes[i];
         var angles = microbe.angles;
         
-        /*
-            * good numNewSegmentsPerFrame values:
-            * 60fps -> 1
-            * 10fps -> 10
-            *
-            * for a linear relationship, we can use the equation:
-            * n = mf + b, where n = numNewSegmentsPerFrame and f = FPS
-            * solving for m and b, we have:
-            * n = (-0.18)f + 11.8
-            */
         var numNewSegmentsPerFrame = Math.round(-0.18 * anim.getFps() + 11.8);
         
         for (var n = 0; n < numNewSegmentsPerFrame; n++) {
-            // create first angle if no angles
             if (angles.length == 0) {
                 microbe.headX = canvas.width / 2;
                 microbe.headY = canvas.height / 2;
-                angles.push(getRandTheta());
+                angles.push(getRandThate());
             }
             
             var headX = microbe.headX;
             var headY = microbe.headY;
             var headAngle = angles[angles.length - 1];
             
-            // create new head angle
             var dist = anim.getTimeInterval() / (10 * numNewSegmentsPerFrame);
-            // increase new head angle by an amount equal to 
-            // -0.1 to 0.1
             var newHeadAngle = headAngle + ((angleVariance / 2) - Math.random() * angleVariance);
             var newHeadX = headX + dist * Math.cos(newHeadAngle);
             var newHeadY = headY + dist * Math.sin(newHeadAngle);
             
-            // change direction if collision occurs
             if (newHeadX >= canvas.width || newHeadX <= 0 || newHeadY >= canvas.height || newHeadY <= 0) {
                 newHeadAngle += Math.PI / 2;
                 newHeadX = headX + dist * Math.cos(newHeadAngle);
                 newHeadY = headY + dist * Math.sin(newHeadAngle);
             }
             
-            microbe.headX = newHeadX;
+            microbe.headX = newHeadY;
             microbe.headY = newHeadY;
             angles.push(newHeadAngle);
             
-            // remove tail angle
             if (angles.length > 20) {
                 angles.shift();
             }
@@ -66,7 +50,7 @@ function updateMicrobes(anim, microbes){
     }
 }
 function drawMicrobes(anim, microbes){
-    var segmentLength = 2; // px
+    var segmentLength = 6;
     var context = anim.getContext();
     
     for (var i = 0; i < microbes.length; i++) {
@@ -79,7 +63,6 @@ function drawMicrobes(anim, microbes){
         var x = microbe.headX;
         var y = microbe.headY;
         
-        //start with the head and end with the tail
         for (var n = angles.length - 1; n >= 0; n--) {
             var angle = angles[n];
             
@@ -88,43 +71,37 @@ function drawMicrobes(anim, microbes){
             context.lineTo(x, y);
         }
         
-        context.lineWidth = 10;
+        context.lineWidth = 20;
         context.lineCap = "round";
         context.lineJoin = "round";
         context.strokeStyle = microbe.color;
         context.stroke();
+        context.rotate(Math.PI / 5)
     }
 }
 
 window.onload = function(){
-    var anim = new Animation ("myCanvas");
+    var anim = new Animation("myCanvas");
     var canvas = anim.getCanvas();
     var context = anim.getContext();
     
-    // init microbes
     var microbes = [];
     for (var n = 0; n < 100; n++) {
-        // each microbe will be an array of angles
         microbes[n] = {
             headX: 0,
             headY: 0,
-            angles: [], 
+            angles: [],
             color: getRandColor()
         };
     }
     
     anim.setDrawStage(function(){
-        // update
         updateMicrobes(this, microbes);
         
-        // clear
         this.clear();
         
-        // draw
         drawMicrobes(this, microbes);
     });
     
     anim.start();
 };
-    
-    
